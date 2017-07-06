@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gold Coins Collector</title>
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+	<!--JumboTron-->
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron" id="panel">
+				<h1>Gold Coins Collector</h1>
+			</div>
+		</div>
+	
+
+ 	<!--Rules for the Game-->
+	
+		<div class="row">
+			<div class="col-md-12">
+				<h3 id="rules">Rules: </h3>
+				<ul>
+					<li>A random number will be generated at the beginning of the game.</li>
+					<li>There are four gold coins that will have an undisplayed value associated with it.</li>
+					<li>Click on the gold coins to begin playing.</li>
+					<li>The value associated with each gold coin will add up and display below.</li>
+					<li>The goal is to to add the coins up to a value equivalent to the randomly generated number.</li>
+					<li>You lose if you exceed the value of the randomly generated number.</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Number that user needs to reach-->
+		<div class="row">
+			<div>
+				<div class="panel panel-default" id="panel">
+					<div class="panel-heading" id="panel">
+						<h3 class="panel-title">Number You Need to Reach</h3>
+					</div>
+					<div class="panel-body">
+						<h2 id="NumberToGuess">34</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--Gold Coin Images-->
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-0">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img src="assets/images/coin.jpg" height="90" width="90">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img src="assets/images/coin.jpg" height="90" width="90">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img src="assets/images/coin.jpg" height="90" width="90">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img src="assets/images/coin.jpg" height="90" width="90">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-0">
+			</div>
+		</div>
+		<br>
+
+		<!--User's Number-->
+		<div class="row">
+			<div class="panel panel-default" id="panel">
+				<div class="panel-body">
+					Your Number: <span id="numGuesses">1</span>
+				</div>
+			</div>
+
+			<div class="panel panel-default" id="panel">
+				<div class="panel-body">
+					Win Counter: <span id="winCounter">3</span>
+				</div>
+			</div>
+
+			<div class="panel panel-default" id="panel">
+				<div class="panel-body">
+					Loss Counter: <span id="lossCounter">4</span>
+				</div>
+			</div>
+		</div>
+	</div> <!--End of Container Div-->
+
+</body>
+</html>
