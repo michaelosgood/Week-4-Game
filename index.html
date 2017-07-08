@@ -5,12 +5,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>Gold Coins Collector</title>
-	<script type="text/javascript"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!--Link to javascript file-->
+	<script src="assets/javascript/game.js"></script>
 
 	<!--Link to Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!--Link to Javascript file-->
+	<!--Link to CSS file-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -23,8 +27,7 @@
 			</div>
 		</div>
 
- 	<!--Rules for the Game-->
-	
+ 		<!--Rules for the Game-->
 		<div class="row">
 			<div class="col-md-12">
 				<h3 id="rules">Rules: </h3>
@@ -45,31 +48,10 @@
 			<div class="panel panel-default" id="panel">
 				<div class="panel-body">
 					<h2>Number You Need to Reach:</h2>
-					<h3 id="goal"></h3>
+					<h3 id="player-goal"></h3>
 				</div>
 			</div>
 		</div>
-		
-		<!--Gold Coin Images-->
-		<div class="row">
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-0">
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-				<img id="coin1" src="assets/images/coin.jpg" height="90" width="90" alt="coin1">
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-				<img id="coin2" src="assets/images/coin.jpg" height="90" width="90" alt="coin2">
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-				<img id="coin3" src="assets/images/coin.jpg" height="90" width="90" alt="coin3">
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
-				<img id="coin4" src="assets/images/coin.jpg" height="90" width="90" alt="coin4">
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-0">
-			</div>
-		</div>
-		<br>
 
 		<!--User's Total Number-->
 		<div class="row">
@@ -79,11 +61,32 @@
 					<h3 id="total"></h3>
 				</div>
 			</div>
+		</div>
+		
+		<!--Gold Coin Images-->
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img id="coin1" src="assets/images/coin1.jpg" height="90" width="90" alt="coin01">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img id="coin2" src="assets/images/coin2.jpg" height="90" width="90" alt="coin02">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img id="coin3" src="assets/images/coin3.jpg" height="90" width="90" alt="coin03">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+				<img id="coin4" src="assets/images/coin4.jpg" height="90" width="90" alt="coin04">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-0"></div>
+		</div>
+		<br>
 
+		<div class="row">
 			<div class="panel panel-default" id="panel">
 				<div class="panel-body">
 					<h2>Wins: </h2>
-					<h2 id="wins"></h2> 
+					<h3 id="wins"></h3> 
 				</div>
 			</div>
 
@@ -95,7 +98,6 @@
 			</div>
 		</div>
 	</div> <!--End of Container Div-->
-
 
 </body>
 </html>
